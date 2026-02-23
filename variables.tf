@@ -80,8 +80,7 @@ variable "database_route_table_tags" {
     type = bool
     default = false
  }
-
-
+  
 
 variable "vpc_peering_tags" { 
   default     = {}
