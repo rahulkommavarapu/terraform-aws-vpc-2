@@ -1,6 +1,6 @@
 
 # 1.Creating the Peering for two Different VPCs
-resource "aws_vpc_peering_connection" "main" {
+resource "aws_vpc_peering_connection" "default" {
   count       = var.is_peering_required ? 1 : 0
   vpc_id      = aws_vpc.main.id      #requester
   peer_vpc_id = local.default_vpc_id #acceptor
